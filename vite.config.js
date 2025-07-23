@@ -4,7 +4,7 @@ import imagemin from 'vite-plugin-imagemin'
 
 export default defineConfig({
   // Base URL for GitHub Pages
-  base: '/Reda_Salem_profilie/',
+  base: '/Reda_Salem_Portfolio/',
 
   // Build Configuration
   build: {

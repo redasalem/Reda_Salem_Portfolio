@@ -304,6 +304,7 @@ backdrop-filter: blur(10px);
     opacity: 0;
     transform: translateY(20px);
     animation: cardPopUp 0.5s ease-out forwards;
+    height: 150px;
 
     @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
@@ -315,7 +316,7 @@ backdrop-filter: blur(10px);
       transform: translateY(-10px);
       box-shadow: 0 8px 32px rgba(0,0,0,0.12);
       
-      i {
+      i ,.shadcn-ui,.material_ui,.daisy_ui,.taliwind{
         animation: skillIconWiggle 0.5s ease-in-out;
       }
     }
@@ -673,6 +674,10 @@ backdrop-filter: blur(10px);
       &.tag-css { 
         background: #f0f0f0;
         color: blue;
+      }
+      &.tag-next.js { 
+        background: #f0f0f0;
+        color: rgb(3, 1, 14);
       }
     }
   }
@@ -1109,8 +1114,8 @@ img.lazy {
 @media screen and (max-width: 350px) {
   .cb-chat-bot {
     &__box {
-      width: 220px; 
-      right: 10px; 
+      width: 250px; 
+      right: 15px; 
       bottom: 80px;
     }
 
@@ -1125,7 +1130,7 @@ img.lazy {
 
       input {
         flex: 1;
-        min-width: 0; // منع تجاوز العرض
+        min-width:60%; // منع تجاوز العرض
         font-size: 14px; // تصغير حجم الخط
       }
 
@@ -1134,7 +1139,7 @@ img.lazy {
         display: flex; // تأكيد إظهار الزر
         align-items: center;
         justify-content: center;
-        min-width: 40px; // تحديد حد أدنى للعرض
+        min-width: 30px; // تحديد حد أدنى للعرض
         visibility: visible !important; // تأكيد الظهور
         opacity: 1 !important;
       }

@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://redasalem.github.io/Reda_Salem_Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

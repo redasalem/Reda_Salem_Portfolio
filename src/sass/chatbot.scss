@@ -9,16 +9,17 @@
 
 /* Toggle Button */
 .cb-chat-bot__toggle {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #4158d0, #c850c0);
+  background: linear-gradient(135deg, #fff,#ffff);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
+  animation: dance 0.9s infinite alternate;
 
   &:hover {
     transform: scale(1.05);
