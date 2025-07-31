@@ -6,6 +6,7 @@ import '../sass/style.scss';
 import './chatbot';
 import { initLazyLoading } from '../js/lazeLoading';
 
+
 // change background color of navbar on scroll
  window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
