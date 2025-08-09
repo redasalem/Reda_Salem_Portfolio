@@ -12,6 +12,10 @@
     <meta name="keywords" content="frontend developer, React, JavaScript, HTML, CSS, web development, portfolio">
     <meta name="author" content="Reda Salem">
     <meta name="robots" content="index, follow">
+    <meta name="description" content="Frontend developer specializing in React, JavaScript, and modern web technologies. View my portfolio showcasing responsive and user-friendly web applications.">
+    <meta name="keywords" content="frontend developer, React, JavaScript, HTML, CSS, web development, portfolio">
+    <meta name="author" content="Reda Salem">
+    <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -22,16 +26,20 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/reda.png">
-  
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
   <body>
     
   <!-- this is the navbar -->
      <nav class="navbar">
-  <div class="navbar__brand">
-    <img src="src/assets/images/reda.png" alt="Reda Salem Logo" class="navbar__logo" />
-    <span>Reda Salem</span>
+  <div class="navbar__brand" data-aos="fade-down" data-aos-duration="1000">
+    <img src="src/assets/images/reda.png" alt="Reda Salem Logo" class="navbar__logo" data-aos="zoom-in" data-aos-delay="300" />
+    <span data-aos="fade-right" data-aos-delay="500">Reda Salem</span>
   </div>
   <ul class="navbar__links">
     <li><a href="#about" class="active">About</a></li>
@@ -44,22 +52,21 @@
   <!-- End this is the navbar -->
 
    <!-- Add this after your navbar in index.html -->
-<section class="about" id="about">
+<section class="about" id="about" data-aos="fade-up" data-aos-duration="1200">
   <div class="about__container">
-    <div class="about__image-wrapper">
-  <img src="./src/assets/images/reda.png" alt="Reda Salem" class="about__image" />
+    <div class="about__image-wrapper" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1500">
+  <img src="./src/assets/images/reda.png" alt="Reda Salem" class="about__image" data-aos="flip-right" data-aos-delay="600" />
   <span class="about__verified" title="Verified">
     <i class="fas fa-check-circle"></i>
   </span>
 </div>
-    <div class="about__content">
-       <h2 class="typing-text mt-3">Front End Developer</h2>
+    <div class="about__content" data-aos="fade-up" data-aos-delay="300">
+       <h2 class="typing-text mt-3" data-aos="fade-right" data-aos-delay="400">Front End Developer</h2>
       <p>
-      Hi, I'm Reda Salem, a passionate and self-motivated 
-      front-end web developer I love building modern, responsive,
-       and user-friendly websites I'm always looking to improve, 
-       build real-world projects, and grow as a developer
-       I hold a Bachelor's degree in Information Systems and Technology from Port Said University
+      Hi, I'm Reda Salem – a passionate and self-motivated Front-End Web Developer with a strong focus on creating modern, responsive, and user-friendly websites. I enjoy turning ideas into real-world projects, continuously improving my skills, and delivering high-quality results. I hold a Bachelor's degree in Information Systems and Technology from Port Said University.
+
+
+
       </p>
      <a href="https://drive.google.com/file/d/1EVqIsGO4Wyg_bO-boTy3AsoLkpt0p5Ae/view" 
    target="_blank"
@@ -90,11 +97,11 @@
   </div>
 </section>
 <!-- timeLine -->
- <section class="timeline-section" id="about">
+ <section class="timeline-section" id="about" data-aos="fade-up" data-aos-duration="1200">
   <div class="container">
-    <h2 class="timeline-title">My Journey </h2>
+    <h2 class="timeline-title" data-aos="fade-down" data-aos-delay="300">My Journey </h2>
     <div class="timeline">
-      <div class="timeline-item" data-aos="fade-up">
+      <div class="timeline-item" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <div class="timeline-date">Jul 2025 - Present</div>
@@ -150,10 +157,10 @@ Applied knowledge through real-world projects
 
  <!-- timeLine -->
 <!-- skils -->
-<section class="skills" id="skills">
+<section class="skills" id="skills" data-aos="fade-up" data-aos-duration="1000">
   <div class="skills__container">
-    <h2 class="text-danger">My Skills</h2>
-    <div class="skills__grid">
+    <h2 class="text-danger" data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">My Skills</h2>
+    <div class="skills__grid" data-aos="fade-up" data-aos-delay="400">
       <div class="skill-card">
         <i class="fab fa-html5"></i>
         <h3 class="!text-amber-800 font-bold">HTML5</h3>
@@ -167,7 +174,7 @@ Applied knowledge through real-world projects
         <h3 class="!text-blue-900 font-bold">Bootstrap</h3>
     </div>
     <div class="skill-card">
-       <img class="taliwind w-[50%] mx-auto" src="/src/assets/images/taliwind.png" alt="taliwind">
+       <img class="taliwind w-[20%] md:w-[30%] lg:w-[50%] mx-auto" src="/src/assets/images/taliwind.png" alt="taliwind">
   <h3 class="!text-cyan-400 font-bold mt-3">Tailwind CSS</h3>
 </div>
        <div class="skill-card">
@@ -175,15 +182,15 @@ Applied knowledge through real-world projects
         <h3 class="!text-rose-500 font-bold">Sass</h3>
       </div>
       <div class="skill-card">
-        <img class="shadcn-ui w-[30%] mx-auto" src="/src/assets/images/shadcn-ui.png" alt="shadcn-ui">
+        <img class="shadcn-ui w-[20%] md:w-[30%] mx-auto" src="/src/assets/images/shadcn-ui.png" alt="shadcn-ui">
         <h3 class="!text-violet-600 font-bold pt-3">Shadcn-ui</h3>
       </div>
        <div class="skill-card">
-        <img class="material_ui w-[30%] mx-auto" src="/src/assets/images/material_ui.png" alt="material_ui">
+        <img class="material_ui w-[20%] md:w-[30%] mx-auto" src="/src/assets/images/material_ui.png" alt="material_ui">
         <h3 class="!text-sky-500 font-bold pt-3">material_ui</h3>
       </div>
        <div class="skill-card">
-        <img class="daisy_ui w-[30%] mx-auto" src="/public/daisy_ui.jpg" alt="daisy_ui">
+        <img class="daisy_ui w-[20%] md:w-[30%] mx-auto" src="/public/daisy_ui.jpg" alt="daisy_ui">
         <h3 class="!text-orange-400 font-bold pt-3">daisy_ui</h3>
       </div>
       <div class="skill-card">
@@ -199,7 +206,7 @@ Applied knowledge through real-world projects
         <h3 class="!text-cyan-500 font-bold">React</h3>
       </div>
       <div class="skill-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js" width="140" height="90" class="mb-8">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="Next.js" width="130" height="90" class="mb-8 mx-auto">
         <h3 class="!text-black-500 font-bold">Next.js</h3>
       </div>
       <div class="skill-card">
@@ -218,14 +225,14 @@ Applied knowledge through real-world projects
 </section>
 <!-- skils -->
  <!-- Skill Levels Section -->
-<section class="skill-levels" id="skills">
+<section class="skill-levels" id="skills" data-aos="fade-up" data-aos-duration="1200">
   <div class="skill-levels__container">
-    <h2>Skill Levels</h2>
-    <div class="skill-levels__grid">
+    <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="800">Skill Levels</h2>
+    <div class="skill-levels__grid" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="1000">
       <!-- Skill Level 1 -->
-      <div class="skill-level-card">
-        <h3 class="text-amber-800">HTML5</h3>
-        <div class="skill-level" data-level="90"></div>
+      <div class="skill-level-card" data-aos="flip-left" data-aos-delay="100" data-aos-duration="800">
+        <h3 class="text-amber-800" data-aos="fade-right" data-aos-delay="200">HTML5</h3>
+        <div class="skill-level" data-level="90" data-aos="slide-right" data-aos-delay="300" data-aos-duration="1200"></div>
       </div>
       <!-- Skill Level 2 -->
       <div class="skill-level-card">
@@ -297,10 +304,10 @@ Applied knowledge through real-world projects
   </div>
 </section>
 <!--  projects -->
-  <section class="projects" id="projects">
+  <section class="projects" id="projects" data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
-    <h2 class="projects__title">My Projects — Recent Highlights</h2>
-    <div class="row g-4">
+    <h2 class="projects__title" data-aos="fade-down" data-aos-delay="300">My Projects — Recent Highlights</h2>
+    <div class="row g-4" data-aos="fade-up" data-aos-delay="600">
             <!-- Project Card 1 -->
      <!-- Update the project card structure -->
 <div class="col-lg-4 col-md-6">
@@ -309,7 +316,7 @@ Applied knowledge through real-world projects
       <img src="/public/state.png" alt="state">
       <div class="project-card__overlay">
         <div class="project-card__links">
-          <a href="https://realstateredasalem.netlify.app/" target="_blank" class="btn btn-live">
+          <a href="https://stateredasalem.netlify.app/" target="_blank" class="btn btn-live">
             <i class="fas fa-external-link-alt"></i> Live Demo
           </a>
           <a href="https://github.com/redasalem/Real_Estate.git" target="_blank" class="btn btn-code">
@@ -325,6 +332,37 @@ Applied knowledge through real-world projects
          <span class="tag-react">react.js</span>
         <span class="tag-css">TailwindCss</span>
         <span class="tag-js">Vite</span>
+          <span class="text-black border bg-slate-200 font-bold">Netlify</span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+         <!-- Project Card 1 -->
+     <!-- Update the project card structure -->
+<div class="col-lg-4 col-md-6">
+ <div class="project-card" data-aos="fade-up" data-aos-delay="90">
+    <div class="project-card__image">
+      <img src="/src/assets/images/prayer.png" alt="prayer">
+      <div class="project-card__overlay">
+        <div class="project-card__links">
+          <a href="https://payertimes.netlify.app/" target="_blank" class="btn btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+          <a href="https://github.com/redasalem/React-Islamic-Prayer-Times.git" target="_blank" class="btn btn-code">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card__content">
+      <h3>Prayer Times App</h3>
+      <p>A sleek and responsive React application that fetches accurate daily prayer times based on your chosen city and date, using the official Aladhan API.</p>
+      <div class="project-card__tags">
+         <span class="tag-react">react.js</span>
+        <span class="tag-css">Css</span>
+        <span class="tag-js">Vite</span>
+        <span class="text-black border bg-slate-200 font-bold">Aladhan API</span>
           <span class="text-black border bg-slate-200 font-bold">Netlify</span>
         
       </div>
@@ -430,7 +468,7 @@ OpenWeatherMap, styled via shadcn/ui, and deployed on Vercel.</p>
       <!-- Project Card 2 -->
      <!-- Update the project card structure -->
 <div class="col-lg-4 col-md-6">
- <div class="project-card" data-aos="fade-up" data-aos-delay="90">
+ <div class="project-card" data-aos="fade-up" data-aos-delay="50">
     <div class="project-card__image">
       <img src="./src/assets/images/ecomercy.jpg" alt="Project Name">
       <div class="project-card__overlay">
@@ -684,18 +722,46 @@ OpenWeatherMap, styled via shadcn/ui, and deployed on Vercel.</p>
   </div>
 </div>
 
+<div class="col-lg-4 col-md-6">
+  <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+    <div class="project-card__image">
+      <img src="./src/assets/images/calculator.png" alt="calculator">
+      <div class="project-card__overlay">
+        <div class="project-card__links">
+          <a href="https://reda-salem-calculator.netlify.app/" target="_blank" class="btn btn-live">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+          <a href="https://github.com/redasalem/Simple-JS-Calculator.git" target="_blank" class="btn btn-code">
+            <i class="fab fa-github"></i> View Code
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card__content">
+      <h3>Simple Calculator</h3>
+      <p>A basic calculator that performs standard arithmetic operations (addition, subtraction, multiplication, division) with a simple and responsive user interface. No external libraries or separate JS files were used.</p>
+      <div class="project-card__tags">
+        <span class="tag-html">Html</span>
+        <span class="tag-css">TailwindCss</span>
+        <span class="tag-js">JavaScript</span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 
     </div>
   </div>
 </section>
 <!-- contact -->
   <!-- bg-gray-50 -->
-<section id="contact" class="contact py-20"> 
+<section id="contact" class="contact py-20" data-aos="fade-up"> 
   <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12 contact__title">Contact me</h2>
+    <h2 class="text-4xl font-bold text-center mb-12 contact__title" data-aos="fade-up" data-aos-delay="100">Contact me</h2>
     
-    <div class="max-w-3xl mx-auto  rounded-2xl shadow-lg p-8" style="background-image: url(./src/assets/images/form.jpg)">
-      <form id="contactForm" class="space-y-6 needs-validation" novalidate>
+    <div class="max-w-3xl mx-auto rounded-2xl shadow-lg p-8" data-aos="zoom-in" data-aos-delay="200" style="background-image: url(./src/assets/images/form.jpg)">
+      <form id="contactForm" class="space-y-6 needs-validation" data-aos="fade-up" data-aos-delay="300" novalidate>
         <div class="grid md:grid-cols-2 gap-6">
           <div>
             <label class="block text-sm font-medium text-gray-100 mb-2">Name</label>
@@ -745,7 +811,7 @@ OpenWeatherMap, styled via shadcn/ui, and deployed on Vercel.</p>
 </section>
 <!-- End contact -->
  <!-- chatbot -->
-<div class="cb-chat-bot">
+<div class="cb-chat-bot mr-7 sm:mr-5">
   <div class="cb-chat-bot__toggle">
     <!-- <i class="fas fa-comments"></i> -->
      <img src="./public/bot.png" alt="chat icon" width="100%" height="100%" />
@@ -845,5 +911,19 @@ OpenWeatherMap, styled via shadcn/ui, and deployed on Vercel.</p>
   
     
     <script type="module" src="/src/js/main.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,            // Faster base duration
+      easing: 'ease-out',      // Simpler easing for faster animations
+      once: true,              // Animations occur only once
+      offset: 50,              // Trigger animations earlier
+      delay: 50,               // Minimal delay for smoother loading
+      anchorPlacement: 'top-bottom', // Trigger as soon as element enters viewport
+      mirror: false,           // Don't animate out
+      disable: 'mobile',       // Disable on mobile for better performance
+      throttleDelay: 50       // Faster reaction to scroll events
+    });
+  </script>
   </body>
 </html>
